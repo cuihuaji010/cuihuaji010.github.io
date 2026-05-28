@@ -408,6 +408,22 @@ html[data-theme="dark"] .glass-button::before {
   opacity: 0.1;
 }
 
+.visitor-map-card__frame--live {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 156px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  overflow: visible;
+}
+
+.visitor-map-card__frame--live::before {
+  display: none;
+}
+
 html[data-theme="dark"] .visitor-map-card__frame {
   background:
     radial-gradient(circle at center, rgba(120, 160, 255, 0.12), transparent 54%),
@@ -421,6 +437,10 @@ html[data-theme="dark"] .visitor-map-card__frame::before {
 
 html[data-theme="dark"] .visitor-map-card__frame--live::before {
   opacity: 0.12;
+}
+
+html[data-theme="dark"] .visitor-map-card__frame--live {
+  background: none;
 }
 
 .visitor-map-card__glow,
@@ -488,14 +508,30 @@ html[data-theme="dark"] .visitor-map-card__frame--live::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
-  padding: 6px;
+  width: 100%;
+  min-height: 156px;
+  padding: 0;
+  text-align: center;
+}
+
+.visitor-map-card__widget > * {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto !important;
 }
 
 .visitor-map-card__widget > div,
+.visitor-map-card__widget > a,
+.visitor-map-card__widget > span,
 .visitor-map-card__widget iframe,
 .visitor-map-card__widget canvas {
+  margin-inline: auto;
   max-width: 100%;
+}
+
+.visitor-map-card__widget img {
+  display: block;
+  margin-inline: auto !important;
 }
 
 @keyframes map-pulse {
