@@ -1,155 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hanwen Cui | Academic Homepage</title>
-  <meta
-    name="description"
-    content="Hanwen Cui is an undergraduate researcher at BUPT working on story rewriting, reward modeling, and multi-agent reasoning."
-  >
+  <title>Hanwen Cui</title>
+  <meta name="description" content="Personal academic homepage of Hanwen Cui.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <a class="brand" href="#top">Hanwen Cui</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#about" data-nav="about"></a>
-        <a href="#highlight" data-nav="highlight"></a>
-        <a href="#news" data-nav="news"></a>
-        <a href="#publications" data-nav="publications"></a>
-        <a href="#education" data-nav="education"></a>
-        <a href="#awards" data-nav="awards"></a>
-        <a href="#contact" data-nav="contact"></a>
+  <div class="page">
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Primary">
+        <a class="glass-button glass-button--sm" href="#top" id="nav-home">Home</a>
+        <a class="glass-button glass-button--sm" href="#publications" id="nav-publications">Publications</a>
+        <a class="glass-button glass-button--sm" href="#news" id="nav-news">News</a>
+        <a class="glass-button glass-button--sm" href="#awards" id="nav-awards">Awards</a>
+        <a class="glass-button glass-button--sm" href="#life" id="nav-life">Life</a>
       </nav>
-      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">
-        <span>EN</span>
-        <span>/</span>
-        <span>中</span>
-      </button>
+      <div class="header-actions">
+        <button class="glass-button glass-button--sm lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      </div>
     </header>
 
     <main class="layout" id="top">
-      <aside class="sidebar reveal">
-        <div class="profile-card">
-          <div class="profile-card__media">
-            <img src="./assets/profile.jpg" alt="Portrait of Hanwen Cui">
-          </div>
-          <div class="profile-card__body">
-            <p class="profile-card__eyebrow" id="profile-eyebrow"></p>
-            <h1 id="profile-name"></h1>
-            <p class="profile-card__title" id="profile-title"></p>
-            <p class="profile-card__summary" id="profile-summary"></p>
+      <aside class="sidebar">
+        <div class="author-card">
+          <img class="author-card__photo" src="./assets/profile.png" alt="Portrait of Hanwen Cui">
+          <h1 class="author-card__name" id="author-name">Hanwen Cui</h1>
+          <p class="author-card__title" id="author-title">Undergraduate Student @ BUPT</p>
 
-            <ul class="meta-list" id="meta-list"></ul>
-
-            <div class="profile-actions">
-              <a class="button button--primary" id="cv-link" href="./assets/Hanwen_Cui_CV.pdf" target="_blank" rel="noreferrer"></a>
-              <a class="button button--ghost" id="email-link" href="mailto:cuihanwen2023@bupt.edu.cn"></a>
-            </div>
-
-            <div class="social-links">
-              <a href="https://github.com/cuihuaji010" target="_blank" rel="noreferrer" id="github-link"></a>
-              <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer" id="arxiv-link"></a>
-            </div>
-          </div>
+          <ul class="author-card__meta">
+            <li>
+              <span class="meta-link">
+                <span class="meta-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10zm0-8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                  </svg>
+                </span>
+                <span id="meta-location">Beijing, China</span>
+              </span>
+            </li>
+            <li>
+              <a class="meta-link" href="https://github.com/cuihuaji010" target="_blank" rel="noreferrer">
+                <span class="meta-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.48 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.48-1.33-5.48-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.44 11.44 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.09.81 2.19v3.25c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"></path>
+                  </svg>
+                </span>
+                <span id="meta-github">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a class="meta-link" href="mailto:hanwencui06@gmail.com">
+                <span class="meta-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm17 2H4v10h16V7zm-8 4.8L4.8 7.5h14.4L12 11.8z"></path>
+                  </svg>
+                </span>
+                <span id="meta-email">Email</span>
+              </a>
+            </li>
+            <li>
+              <a class="meta-link" href="#" aria-label="Google Scholar placeholder">
+                <span class="meta-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-7.53 8.14V15c0 2.49 3.37 4.5 7.53 4.5s7.53-2.01 7.53-4.5v-3.86L12 15.5l-7.53-4.36z"></path>
+                  </svg>
+                </span>
+                <span id="meta-scholar">Google Scholar</span>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <section class="visitor-map-card">
+          <h2 class="visitor-map-card__title" id="visitor-map-title">Visitor Map</h2>
+          <div class="visitor-map-card__frame visitor-map-card__frame--live" id="visitor-map-frame">
+            <div class="visitor-map-card__widget" id="visitor-map-widget">
+              <script id="_waulcr">var _wau = _wau || []; _wau.push(["map", "aqxvi707qs", "lcr", "311", "156", "night", "target-pink"]);</script><script async src="https://waust.at/m.js"></script>
+            </div>
+          </div>
+          <p class="visitor-map-card__text" id="visitor-map-text">Live visitor locations are displayed here.</p>
+          <p class="visitor-map-card__note" id="visitor-map-note">Visitor analytics powered by whos.amung.us.</p>
+        </section>
       </aside>
 
-      <div class="content">
-        <section class="section reveal" id="about">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="about-eyebrow"></p>
-            <h2 id="about-title"></h2>
-          </div>
-          <div class="panel">
-            <div class="rich-text" id="about-body"></div>
-          </div>
+      <article class="content">
+        <section class="content-block">
+          <h2 id="about-title">About</h2>
+          <p id="intro-text">Hello, I am currently a third-year undergraduate student at Beijing University of Posts and Telecommunications. From 2025 to 2026, I was a research intern at <a href="https://www.ruc-aim3.com/" target="_blank" rel="noreferrer">RUC AIM3 Lab</a>. Since 2026, I have been an intern at the Institute of Computing Technology, Chinese Academy of Sciences, <a href="https://stay-hungry-time.github.io/" target="_blank" rel="noreferrer">TIME Group</a>. My current research interests focus on natural language processing and multi-agent systems.</p>
         </section>
 
-        <section class="section reveal" id="highlight">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="highlight-eyebrow"></p>
-            <h2 id="highlight-title"></h2>
-          </div>
-          <div class="card-grid" id="highlight-list"></div>
+        <section class="content-block" id="news">
+          <h2 id="news-title">📰 News</h2>
+          <ul id="news-list">
+            <li>[May 26, 2026] My first paper, <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a>, was posted to arXiv.</li>
+          </ul>
         </section>
 
-        <section class="section reveal" id="news">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="news-eyebrow"></p>
-            <h2 id="news-title"></h2>
-          </div>
-          <div class="panel">
-            <div class="timeline-list" id="news-list"></div>
-          </div>
-        </section>
-
-        <section class="section reveal" id="publications">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="publications-eyebrow"></p>
-            <h2 id="publications-title"></h2>
-          </div>
-          <div class="stack-list" id="publications-list"></div>
-        </section>
-
-        <section class="section reveal" id="experience">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="experience-eyebrow"></p>
-            <h2 id="experience-title"></h2>
-          </div>
-          <div class="stack-list" id="experience-list"></div>
-        </section>
-
-        <section class="section reveal" id="education">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="education-eyebrow"></p>
-            <h2 id="education-title"></h2>
-          </div>
-          <div class="stack-list" id="education-list"></div>
-        </section>
-
-        <section class="section reveal" id="awards">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="awards-eyebrow"></p>
-            <h2 id="awards-title"></h2>
-          </div>
-          <div class="two-column">
-            <div class="panel">
-              <h3 class="panel-title" id="honors-title"></h3>
-              <ul class="bullet-list" id="honors-list"></ul>
+        <section class="content-block" id="publications">
+          <h2 id="publications-title">📚 Publications</h2>
+          <article class="publication-entry">
+            <div class="publication-entry__media">
+              <img src="./assets/storylens.jpg" alt="Figure from StoryLens paper">
             </div>
-            <div class="panel">
-              <h3 class="panel-title" id="skills-title"></h3>
-              <ul class="bullet-list" id="skills-list"></ul>
+            <div class="publication-entry__body">
+              <h3 class="publication-entry__title">
+                <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer" id="paper-title">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a>
+              </h3>
+              <p class="publication-entry__authors" id="paper-authors">Hanwen Cui, et al.</p>
+              <ul class="publication-entry__highlights" id="paper-highlights">
+                <li>This work studies story rewriting for diverse reader preferences while preserving plot consistency and narrative coherence.</li>
+                <li>It argues that effective story rewriting requires context-aware narrative enrichment rather than surface-level style transfer alone.</li>
+                <li>It introduces STORYLENSBENCH, STORYLENSEVAL, and STORYLENSWRITER for benchmark construction, reward modeling, and two-stage rewriting.</li>
+                <li>Experimental results show that STORYLENSWRITER outperforms strong baselines and highlights the value of context-aware narrative enrichment.</li>
+              </ul>
             </div>
-          </div>
+          </article>
         </section>
 
-        <section class="section reveal" id="contact">
-          <div class="section-heading">
-            <p class="section-heading__eyebrow" id="contact-eyebrow"></p>
-            <h2 id="contact-title"></h2>
-          </div>
-          <div class="panel contact-panel">
-            <p id="contact-copy"></p>
-            <div class="profile-actions">
-              <a class="button button--primary" href="mailto:cuihanwen2023@bupt.edu.cn" id="contact-email"></a>
-              <a class="button button--ghost" href="https://github.com/cuihuaji010" target="_blank" rel="noreferrer" id="contact-github"></a>
-            </div>
-          </div>
+        <section class="content-block" id="awards">
+          <h2 id="awards-title">🏆 Honors and Awards</h2>
+          <ul id="awards-list">
+            <li>Gold Award, China International College Students' Innovation Competition.</li>
+            <li>Outstanding League Member, Outstanding Student, and Outstanding Student Cadre, Beijing University of Posts and Telecommunications.</li>
+            <li>Third Prize, National College Students Mathematics Competition.</li>
+            <li>Second Prize, BUPT Star of Tomorrow English Speech Competition.</li>
+            <li>First-Class Academic Scholarship, Beijing University of Posts and Telecommunications.</li>
+          </ul>
         </section>
-      </div>
+
+        <section class="content-block" id="contact">
+          <h2 id="contact-title">✉️ Contact</h2>
+          <p id="contact-text">I am currently continuing to learn and develop new research projects, and I am also looking for a suitable graduate advisor. If you are interested in supervising me or would like to collaborate on research, please feel free to contact me at <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a>.</p>
+        </section>
+
+        <section class="content-block" id="life">
+          <h2 id="life-title">🌿 Life</h2>
+          <p class="life-placeholder" id="life-text">Coming soon.</p>
+        </section>
+      </article>
     </main>
   </div>
-
   <script src="./script.js"></script>
 </body>
 </html>
