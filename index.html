@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanwen Cui | Academic Homepage</title>
+  <meta
+    name="description"
+    content="Hanwen Cui is an undergraduate researcher at BUPT working on story rewriting, reward modeling, and multi-agent reasoning."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top">Hanwen Cui</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" data-nav="about"></a>
+        <a href="#highlight" data-nav="highlight"></a>
+        <a href="#news" data-nav="news"></a>
+        <a href="#publications" data-nav="publications"></a>
+        <a href="#education" data-nav="education"></a>
+        <a href="#awards" data-nav="awards"></a>
+        <a href="#contact" data-nav="contact"></a>
+      </nav>
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">
+        <span>EN</span>
+        <span>/</span>
+        <span>中</span>
+      </button>
+    </header>
+
+    <main class="layout" id="top">
+      <aside class="sidebar reveal">
+        <div class="profile-card">
+          <div class="profile-card__media">
+            <img src="./assets/profile.jpg" alt="Portrait of Hanwen Cui">
+          </div>
+          <div class="profile-card__body">
+            <p class="profile-card__eyebrow" id="profile-eyebrow"></p>
+            <h1 id="profile-name"></h1>
+            <p class="profile-card__title" id="profile-title"></p>
+            <p class="profile-card__summary" id="profile-summary"></p>
+
+            <ul class="meta-list" id="meta-list"></ul>
+
+            <div class="profile-actions">
+              <a class="button button--primary" id="cv-link" href="./assets/Hanwen_Cui_CV.pdf" target="_blank" rel="noreferrer"></a>
+              <a class="button button--ghost" id="email-link" href="mailto:cuihanwen2023@bupt.edu.cn"></a>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/cuihuaji010" target="_blank" rel="noreferrer" id="github-link"></a>
+              <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer" id="arxiv-link"></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content">
+        <section class="section reveal" id="about">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="about-eyebrow"></p>
+            <h2 id="about-title"></h2>
+          </div>
+          <div class="panel">
+            <div class="rich-text" id="about-body"></div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="highlight">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="highlight-eyebrow"></p>
+            <h2 id="highlight-title"></h2>
+          </div>
+          <div class="card-grid" id="highlight-list"></div>
+        </section>
+
+        <section class="section reveal" id="news">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="news-eyebrow"></p>
+            <h2 id="news-title"></h2>
+          </div>
+          <div class="panel">
+            <div class="timeline-list" id="news-list"></div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="publications">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="publications-eyebrow"></p>
+            <h2 id="publications-title"></h2>
+          </div>
+          <div class="stack-list" id="publications-list"></div>
+        </section>
+
+        <section class="section reveal" id="experience">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="experience-eyebrow"></p>
+            <h2 id="experience-title"></h2>
+          </div>
+          <div class="stack-list" id="experience-list"></div>
+        </section>
+
+        <section class="section reveal" id="education">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="education-eyebrow"></p>
+            <h2 id="education-title"></h2>
+          </div>
+          <div class="stack-list" id="education-list"></div>
+        </section>
+
+        <section class="section reveal" id="awards">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="awards-eyebrow"></p>
+            <h2 id="awards-title"></h2>
+          </div>
+          <div class="two-column">
+            <div class="panel">
+              <h3 class="panel-title" id="honors-title"></h3>
+              <ul class="bullet-list" id="honors-list"></ul>
+            </div>
+            <div class="panel">
+              <h3 class="panel-title" id="skills-title"></h3>
+              <ul class="bullet-list" id="skills-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="contact">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow" id="contact-eyebrow"></p>
+            <h2 id="contact-title"></h2>
+          </div>
+          <div class="panel contact-panel">
+            <p id="contact-copy"></p>
+            <div class="profile-actions">
+              <a class="button button--primary" href="mailto:cuihanwen2023@bupt.edu.cn" id="contact-email"></a>
+              <a class="button button--ghost" href="https://github.com/cuihuaji010" target="_blank" rel="noreferrer" id="contact-github"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
