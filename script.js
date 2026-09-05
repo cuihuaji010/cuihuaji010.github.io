@@ -7,16 +7,18 @@ const translations = {
     navAwards: "Awards",
     navLife: "Life",
     aboutTitle: "About",
-    authorTitle: "Undergraduate Student @ BUPT",
+    authorTitle: "Fourth-Year Telecommunications Engineering Student @ BUPT",
     metaLocation: "Beijing, China",
     metaGithub: "GitHub",
     metaEmail: "Email",
     metaScholar: "Google Scholar",
     intro:
-      'Hello, I am currently a third-year undergraduate student at Beijing University of Posts and Telecommunications. From 2025 to 2026, I was a research intern at <a href="https://www.ruc-aim3.com/" target="_blank" rel="noreferrer">RUC AIM3 Lab</a>. Since 2026, I have been an intern at the Institute of Computing Technology, Chinese Academy of Sciences, <a href="https://stay-hungry-time.github.io/" target="_blank" rel="noreferrer">TIME Group</a>. My current research interests focus on natural language processing and multi-agent systems.',
+      'Hello, I am a fourth-year Telecommunications Engineering student at Beijing University of Posts and Telecommunications. I will soon begin my Ph.D. studies at BUPT GAMMA Lab, advised by <a href="http://www.shichuan.org/ShiChuan_ch.html" target="_blank" rel="noreferrer">Prof. Chuan Shi</a> and <a href="https://yangchengbupt.github.io/" target="_blank" rel="noreferrer">Prof. Cheng Yang</a>. My research interests include graph neural networks, large language models, multi-agent systems, and related topics.',
     newsTitle: "📰 News",
-    news:
+    news: [
+      '[August 31, 2026] <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a> was accepted to EMNLP 2026 Findings.',
       '[May 26, 2026] My first paper, <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a>, was posted to arXiv.',
+    ],
     publicationsTitle: "📚 Publications",
     paperTitle:
       "StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment",
@@ -52,16 +54,18 @@ const translations = {
     navAwards: "奖项",
     navLife: "生活",
     aboutTitle: "关于我",
-    authorTitle: "北京邮电大学本科生",
+    authorTitle: "北京邮电大学通信工程本科生",
     metaLocation: "中国，北京",
     metaGithub: "GitHub",
     metaEmail: "邮箱",
     metaScholar: "谷歌学术",
     intro:
-      '你好，我目前是北京邮电大学大三本科生。2025 至 2026 年期间，我在 <a href="https://www.ruc-aim3.com/" target="_blank" rel="noreferrer">RUC AIM3 Lab</a> 担任科研实习生。自 2026 年起，我在中国科学院计算技术研究所 <a href="https://stay-hungry-time.github.io/" target="_blank" rel="noreferrer">TIME Group</a> 实习。当前研究兴趣主要聚焦于自然语言处理和多智能体系统。',
+      '你好，我是北京邮电大学通信工程专业大四本科生。即将进入北京邮电大学 GAMMA Lab 攻读博士学位，导师为<a href="http://www.shichuan.org/ShiChuan_ch.html" target="_blank" rel="noreferrer">石川教授</a>和<a href="https://yangchengbupt.github.io/" target="_blank" rel="noreferrer">杨成教授</a>。我的研究兴趣包括图神经网络、大语言模型、多智能体系统及相关方向。',
     newsTitle: "📰 动态",
-    news:
+    news: [
+      '[2026 年 8 月 31 日] <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a> 被 EMNLP 2026 Findings 录取。',
       '[2026 年 5 月 26 日] 我的第一篇论文 <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a> 发布于 arXiv。',
+    ],
     publicationsTitle: "📚 论文",
     paperTitle:
       "StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment",
@@ -124,7 +128,7 @@ function renderLanguage(lang) {
 
   document.getElementById("intro-text").innerHTML = data.intro;
   document.getElementById("news-title").textContent = data.newsTitle;
-  document.getElementById("news-list").innerHTML = `<li>${data.news}</li>`;
+  renderList("news-list", data.news);
 
   document.getElementById("publications-title").textContent = data.publicationsTitle;
   document.getElementById("paper-title").textContent = data.paperTitle;
