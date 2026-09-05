@@ -2,33 +2,35 @@ const translations = {
   en: {
     toggle: "中文",
     navHome: "Home",
+    navEducation: "Education",
     navPublications: "Publications",
     navNews: "News",
     navAwards: "Awards",
     navLife: "Life",
     aboutTitle: "About",
-    authorTitle: "Fourth-Year Telecommunications Engineering Student @ BUPT",
     metaLocation: "Beijing, China",
     metaGithub: "GitHub",
     metaEmail: "Email",
     metaScholar: "Google Scholar",
     intro:
       'Hello, I am a fourth-year Telecommunications Engineering student at Beijing University of Posts and Telecommunications. I will soon begin my Ph.D. studies at BUPT GAMMA Lab, advised by <a href="http://www.shichuan.org/ShiChuan_ch.html" target="_blank" rel="noreferrer">Prof. Chuan Shi</a> and <a href="https://yangchengbupt.github.io/" target="_blank" rel="noreferrer">Prof. Cheng Yang</a>. My research interests include graph neural networks, large language models, multi-agent systems, and related topics.',
+    educationTitle: "🎓 Education",
+    educationPhdSchool: "Beijing University of Posts and Telecommunications",
+    educationPhdDegree: "Ph.D., Computer Science",
+    educationPhdDates: "2027 – 2032",
+    educationBsSchool: "Beijing University of Posts and Telecommunications",
+    educationBsDegree: "Bachelor's Degree, Telecommunications Engineering",
+    educationBsDates: "Sep 2023 – Jul 2027",
     newsTitle: "📰 News",
     news: [
       '[August 31, 2026] <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a> was accepted to EMNLP 2026 Findings.',
       '[May 26, 2026] My first paper, <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a>, was posted to arXiv.',
     ],
     publicationsTitle: "📚 Publications",
+    paperVenue: "EMNLP 2026 Findings",
     paperTitle:
       "StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment",
-    paperAuthors: "Hanwen Cui, et al.",
-    paperHighlights: [
-      "This work studies story rewriting for diverse reader preferences while preserving plot consistency and narrative coherence.",
-      "It argues that effective story rewriting requires context-aware narrative enrichment rather than surface-level style transfer alone.",
-      "It introduces STORYLENSBENCH, STORYLENSEVAL, and STORYLENSWRITER for benchmark construction, reward modeling, and two-stage rewriting.",
-      "Experimental results show that STORYLENSWRITER outperforms strong baselines and highlights the value of context-aware narrative enrichment.",
-    ],
+    paperAuthors: "Hanwen Cui*, Yuting Mei*, Yuhang Fu, Dingyi Yang, Qin Jin",
     awardsTitle: "🏆 Honors and Awards",
     awards: [
       "Gold Award, China International College Students' Innovation Competition.",
@@ -41,7 +43,9 @@ const translations = {
     contact:
       'I am currently continuing to learn and develop new research projects, and I am also looking for a suitable graduate advisor. If you are interested in supervising me or would like to collaborate on research, please feel free to contact me at <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a>.',
     lifeTitle: "🌿 Life",
-    lifeText: "Coming soon.",
+    lifeIntro: "Welcome to follow me on Xiaohongshu for food discoveries and reflections on academic life.",
+    lifeFoodTitle: "Beijing Food Explorations",
+    lifeAcademicTitle: "Academic Life Reflections",
     visitorMapTitle: "Visitor Map",
     visitorMapText: "Live visitor locations are displayed here.",
     visitorMapNote: "Visitor analytics powered by whos.amung.us.",
@@ -49,33 +53,35 @@ const translations = {
   zh: {
     toggle: "EN",
     navHome: "主页",
+    navEducation: "教育经历",
     navPublications: "论文",
     navNews: "动态",
     navAwards: "奖项",
     navLife: "生活",
     aboutTitle: "关于我",
-    authorTitle: "北京邮电大学通信工程本科生",
     metaLocation: "中国，北京",
     metaGithub: "GitHub",
     metaEmail: "邮箱",
     metaScholar: "谷歌学术",
     intro:
       '你好，我是北京邮电大学通信工程专业大四本科生。即将进入北京邮电大学 GAMMA Lab 攻读博士学位，导师为<a href="http://www.shichuan.org/ShiChuan_ch.html" target="_blank" rel="noreferrer">石川教授</a>和<a href="https://yangchengbupt.github.io/" target="_blank" rel="noreferrer">杨成教授</a>。我的研究兴趣包括图神经网络、大语言模型、多智能体系统及相关方向。',
+    educationTitle: "🎓 教育经历",
+    educationPhdSchool: "北京邮电大学",
+    educationPhdDegree: "计算机科学博士",
+    educationPhdDates: "2027 年 – 2032 年",
+    educationBsSchool: "北京邮电大学",
+    educationBsDegree: "通信工程学士",
+    educationBsDates: "2023 年 9 月 – 2027 年 7 月",
     newsTitle: "📰 动态",
     news: [
       '[2026 年 8 月 31 日] <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a> 被 EMNLP 2026 Findings 录取。',
       '[2026 年 5 月 26 日] 我的第一篇论文 <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a> 发布于 arXiv。',
     ],
     publicationsTitle: "📚 论文",
+    paperVenue: "EMNLP 2026 Findings",
     paperTitle:
       "StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment",
-    paperAuthors: "崔瀚文 等",
-    paperHighlights: [
-      "本文研究了面向多样化读者偏好的故事改写问题，同时保持情节一致性和叙事连贯性。",
-      "我们认为，有效的故事改写不仅需要表层风格迁移，还需要上下文感知的叙事增强。",
-      "本文提出了 STORYLENSBENCH、STORYLENSEVAL 和 STORYLENSWRITER，分别用于基准构建、奖励建模和两阶段改写。",
-      "实验结果表明，STORYLENSWRITER 持续优于强基线方法，验证了上下文感知叙事增强在个性化故事改写中的重要性。",
-    ],
+    paperAuthors: "Hanwen Cui*, Yuting Mei*, Yuhang Fu, Dingyi Yang, Qin Jin",
     awardsTitle: "🏆 荣誉与奖项",
     awards: [
       "中国国际大学生创新创业大赛金奖。",
@@ -88,7 +94,9 @@ const translations = {
     contact:
       '我目前仍在持续学习并推进新的研究项目，同时也在寻找合适的研究生导师。如果你愿意指导我，或希望与我开展科研合作，欢迎通过邮箱 <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a> 与我联系。',
     lifeTitle: "🌿 生活",
-    lifeText: "内容稍后补充。",
+    lifeIntro: "欢迎大家关注我的小红书账号，一起探索北京美食和学术生活的点滴。",
+    lifeFoodTitle: "北京美食探索",
+    lifeAcademicTitle: "学术生活体会分享",
     visitorMapTitle: "访客地图",
     visitorMapText: "这里会显示实时访客分布地图。",
     visitorMapNote: "访客统计组件由 whos.amung.us 提供。",
@@ -109,10 +117,10 @@ function getCurrentLanguage() {
 function renderLanguage(lang) {
   const data = translations[lang];
   document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-  document.documentElement.dataset.theme = "dark";
   document.title = lang === "zh" ? "崔瀚文" : "Hanwen Cui";
 
   document.getElementById("nav-home").textContent = data.navHome;
+  document.getElementById("nav-education").textContent = data.navEducation;
   document.getElementById("nav-publications").textContent = data.navPublications;
   document.getElementById("nav-news").textContent = data.navNews;
   document.getElementById("nav-awards").textContent = data.navAwards;
@@ -120,20 +128,26 @@ function renderLanguage(lang) {
   document.getElementById("lang-toggle").textContent = data.toggle;
   document.getElementById("about-title").textContent = data.aboutTitle;
 
-  document.getElementById("author-title").textContent = data.authorTitle;
   document.getElementById("meta-location").textContent = data.metaLocation;
   document.getElementById("meta-github").textContent = data.metaGithub;
   document.getElementById("meta-email").textContent = data.metaEmail;
   document.getElementById("meta-scholar").textContent = data.metaScholar;
 
   document.getElementById("intro-text").innerHTML = data.intro;
+  document.getElementById("education-title").textContent = data.educationTitle;
+  document.getElementById("education-phd-school").textContent = data.educationPhdSchool;
+  document.getElementById("education-phd-degree").textContent = data.educationPhdDegree;
+  document.getElementById("education-phd-dates").textContent = data.educationPhdDates;
+  document.getElementById("education-bs-school").textContent = data.educationBsSchool;
+  document.getElementById("education-bs-degree").textContent = data.educationBsDegree;
+  document.getElementById("education-bs-dates").textContent = data.educationBsDates;
   document.getElementById("news-title").textContent = data.newsTitle;
   renderList("news-list", data.news);
 
   document.getElementById("publications-title").textContent = data.publicationsTitle;
+  document.getElementById("paper-venue").textContent = data.paperVenue;
   document.getElementById("paper-title").textContent = data.paperTitle;
   document.getElementById("paper-authors").textContent = data.paperAuthors;
-  renderList("paper-highlights", data.paperHighlights);
 
   document.getElementById("awards-title").textContent = data.awardsTitle;
   renderList("awards-list", data.awards);
@@ -141,7 +155,9 @@ function renderLanguage(lang) {
   document.getElementById("contact-title").textContent = data.contactTitle;
   document.getElementById("contact-text").innerHTML = data.contact;
   document.getElementById("life-title").textContent = data.lifeTitle;
-  document.getElementById("life-text").textContent = data.lifeText;
+  document.getElementById("life-intro").textContent = data.lifeIntro;
+  document.getElementById("life-food-title").textContent = data.lifeFoodTitle;
+  document.getElementById("life-academic-title").textContent = data.lifeAcademicTitle;
   document.getElementById("visitor-map-title").textContent = data.visitorMapTitle;
   document.getElementById("visitor-map-text").textContent = data.visitorMapText;
   document.getElementById("visitor-map-note").textContent = data.visitorMapNote;

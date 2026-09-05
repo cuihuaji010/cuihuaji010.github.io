@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles.css?v=20260528b">
@@ -18,6 +18,7 @@
     <header class="site-header">
       <nav class="top-nav" aria-label="Primary">
         <a class="glass-button glass-button--sm" href="#top" id="nav-home">Home</a>
+        <a class="glass-button glass-button--sm" href="#education" id="nav-education">Education</a>
         <a class="glass-button glass-button--sm" href="#publications" id="nav-publications">Publications</a>
         <a class="glass-button glass-button--sm" href="#news" id="nav-news">News</a>
         <a class="glass-button glass-button--sm" href="#awards" id="nav-awards">Awards</a>
@@ -33,7 +34,6 @@
         <div class="author-card">
           <img class="author-card__photo" src="./assets/profile.png" alt="Portrait of Hanwen Cui">
           <h1 class="author-card__name" id="author-name">Hanwen Cui</h1>
-          <p class="author-card__title" id="author-title">Fourth-Year Telecommunications Engineering Student @ BUPT</p>
 
           <ul class="author-card__meta">
             <li>
@@ -69,9 +69,7 @@
             <li>
               <a class="meta-link" href="https://scholar.google.com/citations?hl=en&user=boEHcV0AAAAJ" target="_blank" rel="noreferrer" aria-label="Google Scholar profile">
                 <span class="meta-link__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-7.53 8.14V15c0 2.49 3.37 4.5 7.53 4.5s7.53-2.01 7.53-4.5v-3.86L12 15.5l-7.53-4.36z"></path>
-                  </svg>
+                  <img src="./assets/google-scholar.svg" alt="">
                 </span>
                 <span id="meta-scholar">Google Scholar</span>
               </a>
@@ -83,7 +81,7 @@
           <h2 class="visitor-map-card__title" id="visitor-map-title">Visitor Map</h2>
           <div class="visitor-map-card__frame visitor-map-card__frame--live" id="visitor-map-frame">
             <div class="visitor-map-card__widget" id="visitor-map-widget">
-              <script id="_waulcr">var _wau = _wau || []; _wau.push(["map", "aqxvi707qs", "lcr", "311", "156", "night", "target-pink"]);</script><script async src="https://waust.at/m.js"></script>
+              <script id="_waulcr">var _wau = window._wau || []; _wau.push(["map", "aqxvi707qs", "lcr", "311", "156", "night", "target-pink"]);</script><script src="https://waust.at/m.js"></script>
             </div>
           </div>
           <p class="visitor-map-card__text" id="visitor-map-text">Live visitor locations are displayed here.</p>
@@ -107,23 +105,13 @@
 
         <section class="content-block" id="publications">
           <h2 id="publications-title">📚 Publications</h2>
-          <article class="publication-entry">
-            <div class="publication-entry__media">
-              <img src="./assets/storylens.jpg" alt="Figure from StoryLens paper">
-            </div>
-            <div class="publication-entry__body">
-              <h3 class="publication-entry__title">
-                <a href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer" id="paper-title">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a>
-              </h3>
-              <p class="publication-entry__authors" id="paper-authors">Hanwen Cui, et al.</p>
-              <ul class="publication-entry__highlights" id="paper-highlights">
-                <li>This work studies story rewriting for diverse reader preferences while preserving plot consistency and narrative coherence.</li>
-                <li>It argues that effective story rewriting requires context-aware narrative enrichment rather than surface-level style transfer alone.</li>
-                <li>It introduces STORYLENSBENCH, STORYLENSEVAL, and STORYLENSWRITER for benchmark construction, reward modeling, and two-stage rewriting.</li>
-                <li>Experimental results show that STORYLENSWRITER outperforms strong baselines and highlights the value of context-aware narrative enrichment.</li>
-              </ul>
-            </div>
-          </article>
+          <ul class="publication-list">
+            <li class="publication-list__item">
+              <span class="publication-venue" id="paper-venue">EMNLP 2026 Findings</span>
+              <a class="publication-list__title" href="https://arxiv.org/abs/2605.28073" target="_blank" rel="noreferrer" id="paper-title">StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment</a>
+              <span class="publication-list__authors" id="paper-authors">Hanwen Cui*, Yuting Mei*, Yuhang Fu, Dingyi Yang, Qin Jin</span>
+            </li>
+          </ul>
         </section>
 
         <section class="content-block" id="awards">
@@ -137,6 +125,28 @@
           </ul>
         </section>
 
+        <section class="content-block" id="education">
+          <h2 id="education-title">🎓 Education</h2>
+          <div class="education-list">
+            <article class="education-entry">
+              <img class="education-entry__logo" src="./assets/bupt-logo.svg" alt="Beijing University of Posts and Telecommunications emblem">
+              <div class="education-entry__body">
+                <h3 class="education-entry__school" id="education-phd-school">Beijing University of Posts and Telecommunications</h3>
+                <p class="education-entry__degree" id="education-phd-degree">Ph.D., Computer Science</p>
+                <p class="education-entry__dates" id="education-phd-dates">2027 – 2032</p>
+              </div>
+            </article>
+            <article class="education-entry">
+              <img class="education-entry__logo" src="./assets/bupt-logo.svg" alt="Beijing University of Posts and Telecommunications emblem">
+              <div class="education-entry__body">
+                <h3 class="education-entry__school" id="education-bs-school">Beijing University of Posts and Telecommunications</h3>
+                <p class="education-entry__degree" id="education-bs-degree">Bachelor's Degree, Telecommunications Engineering</p>
+                <p class="education-entry__dates" id="education-bs-dates">Sep 2023 – Jul 2027</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="content-block" id="contact">
           <h2 id="contact-title">✉️ Contact</h2>
           <p id="contact-text">I am currently continuing to learn and develop new research projects, and I am also looking for a suitable graduate advisor. If you are interested in supervising me or would like to collaborate on research, please feel free to contact me at <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a>.</p>
@@ -144,7 +154,29 @@
 
         <section class="content-block" id="life">
           <h2 id="life-title">🌿 Life</h2>
-          <p class="life-placeholder" id="life-text">Coming soon.</p>
+          <p class="life-intro" id="life-intro">Welcome to follow me on Xiaohongshu for food discoveries and reflections on academic life.</p>
+          <div class="xiaohongshu-links" aria-label="Xiaohongshu profiles">
+            <a class="xiaohongshu-card" href="https://www.xiaohongshu.com/user/profile/6019402e0000000001004383" target="_blank" rel="noreferrer">
+              <span class="xiaohongshu-card__logo" aria-hidden="true">
+                <img src="./assets/xiaohongshu.svg" alt="">
+              </span>
+              <span class="xiaohongshu-card__content">
+                <span class="xiaohongshu-card__eyebrow">Xiaohongshu</span>
+                <span class="xiaohongshu-card__title" id="life-food-title">Beijing Food Explorations</span>
+              </span>
+              <span class="xiaohongshu-card__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="xiaohongshu-card" href="https://www.xiaohongshu.com/user/profile/648464cb000000001c02b375" target="_blank" rel="noreferrer">
+              <span class="xiaohongshu-card__logo" aria-hidden="true">
+                <img src="./assets/xiaohongshu.svg" alt="">
+              </span>
+              <span class="xiaohongshu-card__content">
+                <span class="xiaohongshu-card__eyebrow">Xiaohongshu</span>
+                <span class="xiaohongshu-card__title" id="life-academic-title">Academic Life Reflections</span>
+              </span>
+              <span class="xiaohongshu-card__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
         </section>
       </article>
     </main>
