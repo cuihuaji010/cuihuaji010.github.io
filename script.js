@@ -4,6 +4,7 @@ const translations = {
     navHome: "Home",
     navEducation: "Education",
     navPublications: "Publications",
+    navResearch: "Research",
     navNews: "News",
     navAwards: "Awards",
     navLife: "Life",
@@ -31,6 +32,17 @@ const translations = {
     paperTitle:
       "StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment",
     paperAuthors: "Hanwen Cui*, Yuting Mei*, Yuhang Fu, Dingyi Yang, Qin Jin",
+    researchTitle: "🔬 Research Internships",
+    researchMentorLabel: "Mentor",
+    researchFocusLabel: "Focus",
+    researchRucPeriod: "Jul 2025 – May 2026",
+    researchRucLab: "RUC AIM3 Lab, Renmin University of China",
+    researchRucMentor: "Prof. Qin Jin",
+    researchRucFocus: "Reinforcement learning and preference alignment.",
+    researchIctPeriod: "Mar 2026 – Sep 2026",
+    researchIctLab: "Institute of Computing Technology, Chinese Academy of Sciences",
+    researchIctMentor: "Keping Bi",
+    researchIctFocus: "Model knowledge boundaries and multi-agent debate systems.",
     awardsTitle: "🏆 Honors and Awards",
     awards: [
       "Gold Award, China International College Students' Innovation Competition.",
@@ -41,7 +53,7 @@ const translations = {
     ],
     contactTitle: "✉️ Contact",
     contact:
-      'I am currently continuing to learn and develop new research projects, and I am also looking for a suitable graduate advisor. If you are interested in supervising me or would like to collaborate on research, please feel free to contact me at <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a>.',
+      'I am always interested in research collaborations. If you would like to work together, please feel free to contact me at <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a>.',
     lifeTitle: "🌿 Life",
     lifeIntro: "Welcome to follow me on Xiaohongshu for food discoveries and reflections on academic life.",
     lifeFoodTitle: "Beijing Food Explorations",
@@ -55,6 +67,7 @@ const translations = {
     navHome: "主页",
     navEducation: "教育经历",
     navPublications: "论文",
+    navResearch: "科研",
     navNews: "动态",
     navAwards: "奖项",
     navLife: "生活",
@@ -82,6 +95,17 @@ const translations = {
     paperTitle:
       "StoryLens: Preference-Aligned Story Rewriting via Context-Aware Narrative Enrichment",
     paperAuthors: "Hanwen Cui*, Yuting Mei*, Yuhang Fu, Dingyi Yang, Qin Jin",
+    researchTitle: "🔬 科研实习",
+    researchMentorLabel: "导师",
+    researchFocusLabel: "研究方向",
+    researchRucPeriod: "2025 年 7 月 – 2026 年 5 月",
+    researchRucLab: "中国人民大学 AIM3 Lab",
+    researchRucMentor: "金琴教授",
+    researchRucFocus: "强化学习与偏好对齐。",
+    researchIctPeriod: "2026 年 3 月 – 2026 年 9 月",
+    researchIctLab: "中国科学院计算技术研究所",
+    researchIctMentor: "Keping Bi",
+    researchIctFocus: "模型知识边界与多智能体辩论系统。",
     awardsTitle: "🏆 荣誉与奖项",
     awards: [
       "中国国际大学生创新创业大赛金奖。",
@@ -92,7 +116,7 @@ const translations = {
     ],
     contactTitle: "✉️ 联系方式",
     contact:
-      '我目前仍在持续学习并推进新的研究项目，同时也在寻找合适的研究生导师。如果你愿意指导我，或希望与我开展科研合作，欢迎通过邮箱 <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a> 与我联系。',
+      '我始终乐于开展科研合作。如果你希望与我一起探索研究问题，欢迎通过邮箱 <a href="mailto:hanwencui06@gmail.com">hanwencui06@gmail.com</a> 与我联系。',
     lifeTitle: "🌿 生活",
     lifeIntro: "欢迎大家关注我的小红书账号，一起探索北京美食和学术生活的点滴。",
     lifeFoodTitle: "北京美食探索",
@@ -122,6 +146,7 @@ function renderLanguage(lang) {
   document.getElementById("nav-home").textContent = data.navHome;
   document.getElementById("nav-education").textContent = data.navEducation;
   document.getElementById("nav-publications").textContent = data.navPublications;
+  document.getElementById("nav-research").textContent = data.navResearch;
   document.getElementById("nav-news").textContent = data.navNews;
   document.getElementById("nav-awards").textContent = data.navAwards;
   document.getElementById("nav-life").textContent = data.navLife;
@@ -148,6 +173,20 @@ function renderLanguage(lang) {
   document.getElementById("paper-venue").textContent = data.paperVenue;
   document.getElementById("paper-title").textContent = data.paperTitle;
   document.getElementById("paper-authors").textContent = data.paperAuthors;
+
+  document.getElementById("research-title").textContent = data.researchTitle;
+  document.getElementById("research-mentor-label").textContent = data.researchMentorLabel;
+  document.getElementById("research-focus-label").textContent = data.researchFocusLabel;
+  document.getElementById("research-ruc-period").textContent = data.researchRucPeriod;
+  document.getElementById("research-ruc-lab").textContent = data.researchRucLab;
+  document.getElementById("research-ruc-mentor").textContent = data.researchRucMentor;
+  document.getElementById("research-ruc-focus").textContent = data.researchRucFocus;
+  document.getElementById("research-mentor-label-ict").textContent = data.researchMentorLabel;
+  document.getElementById("research-focus-label-ict").textContent = data.researchFocusLabel;
+  document.getElementById("research-ict-period").textContent = data.researchIctPeriod;
+  document.getElementById("research-ict-lab").textContent = data.researchIctLab;
+  document.getElementById("research-ict-mentor").textContent = data.researchIctMentor;
+  document.getElementById("research-ict-focus").textContent = data.researchIctFocus;
 
   document.getElementById("awards-title").textContent = data.awardsTitle;
   renderList("awards-list", data.awards);
